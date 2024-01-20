@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(/resources/Fonts/Nunito/static/Nunito-ExtraLight.ttf);
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(/resources/Fonts/Nunito/static/Nunito-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(/resources/Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(/resources/Fonts/Nunito/static/Nunito-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(/resources/Fonts/Nunito/static/Nunito-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(/resources/Fonts/Nunito/static/Nunito-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(/resources/Fonts/Nunito/static/Nunito-ExtraBold.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(/resources/Fonts/Open_Sans/static/OpenSans-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/resources/Fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/resources/Fonts/Open_Sans/static/OpenSans-Medium.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/resources/Fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/resources/Fonts/Open_Sans/static/OpenSans-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(/resources/Fonts/Open_Sans/static/OpenSans-ExtraBold.ttf);
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* Typography */
+:root {
+  --ff-main: "Nunito", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --fs-h1: clamp(2.65rem, calc(1.9rem + 4.08vw), 5.06rem);
+  --fs-h2: clamp(2.33rem, calc(1.77rem + 2.81vw), 3.95rem);
+  --fs-h3: clamp(1.94rem, calc(1.59rem + 1.77vw), 2.96rem);
+  --fs-h4: clamp(1.62rem, calc(1.41rem + 1.05vw), 2.22rem);
+  --fs-h5: clamp(1.35rem, calc(1.24rem + 0.55vw), 1.67rem);
+  --fs-h6: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  --fs-p: clamp(1rem, calc(1rem + 0.44vw), 1.5rem);
+}
+
+:root {
+  --ls-h1: calc(var(--fs-h1) * -1.5 / 100);
+  --ls-h2: calc(var(--fs-h2) * -0.5 / 100);
+  --ls-h3: calc(var(--fs-h1) * 0);
+  --ls-h4: calc(var(--fs-h4) * 0.25 / 100);
+  --ls-h5: calc(var(--fs-h5) * 1.5 / 100);
+  --ls-h6: calc(var(--fs-h6) * 1.5 / 100);
+  --ls-p: calc(var(--fs-h5) * 1.5 / 100);
+}
+
+/* 4-point Grid System */
+:root {
+  --spacer: 4px;
+  --spacer-half: calc(var(--spacer) / 2);
+  --spacer-1: calc(var(--spacer) * 1);
+  --spacer-2: calc(var(--spacer) * 2);
+  --spacer-3: calc(var(--spacer) * 3);
+  --spacer-4: calc(var(--spacer) * 4);
+  --spacer-5: calc(var(--spacer) * 5);
+  --spacer-6: calc(var(--spacer) * 6);
+  --spacer-7: calc(var(--spacer) * 7);
+  --spacer-8: calc(var(--spacer) * 8);
+  --spacer-9: calc(var(--spacer) * 9);
+  --spacer-10: calc(var(--spacer) * 10);
+  --spacer-11: calc(var(--spacer) * 11);
+  --spacer-12: calc(var(--spacer) * 12);
+  --spacer-13: calc(var(--spacer) * 13);
+  --spacer-14: calc(var(--spacer) * 14);
+  --spacer-15: calc(var(--spacer) * 15);
+  --spacer-16: calc(var(--spacer) * 16);
+}
+
+:root {
+  --box-shadow-1: 0 0 0.5rem rgb(0, 0, 0, 0.04);
+  --box-shadow-2: 0 0 0.125rem rgb(0, 0, 0, 0.16);
+  --box-shadow-3: 0 12px 16px rgb(0, 0, 0, 0.16);
+  --box-shadow-4: rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+h1 {
+  font-family: var(--ff-main);
+  font-size: var(--fs-h2);
+  letter-spacing: var(--ls-h1);
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: var(--ff-main);
+  font-size: var(--fs-h2);
+  letter-spacing: var(--ls-h2);
+}
+
+h3 {
+  font-family: var(--ff-main);
+  font-size: var(--fs-h3);
+  letter-spacing: var(--ls-h3);
+}
+
+h4 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h4);
+  letter-spacing: var(--ls-h4);
+}
+
+h5 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h5);
+  letter-spacing: var(--ls-h5);
+}
+
+h6 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h6);
+  letter-spacing: var(--ls-h6);
+}
+
+p {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-p);
+  letter-spacing: var(--ls-h1);
+}
+button {
+  font-family: var(--ff-main);
+  font-size: var(--fs-p);
+  letter-spacing: var(--ls-h5);
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.4;
+}
+
+/* Desktop:  */
+@media (min-width: 1440px) {
+  :root {
+    --spacer: calc(4px * 1.75);
+  }
+}
+
+/* Medium Desktop:  */
+@media (min-width: 905px) and (max-width: 1439px) {
+  :root {
+    --spacer: calc(4px * 1.5);
+  }
+}
+
+/* Tablet:  */
+@media (min-width: 600px) and (max-width: 904px) {
+  :root {
+    --spacer: calc(4px * 1.25);
+  }
+}
+
+/* Mobile:  */
+@media (max-width: 599px) {
+  :root {
+    --spacer: calc(4px * 1);
+  }
+}
