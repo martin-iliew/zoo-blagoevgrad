@@ -1,0 +1,70 @@
+/* 12–8–4 column system */
+:root{
+    --grid-rows: 12;
+    --grid-gutter: 24px;
+}
+.grid-container{
+    display: grid;
+    align-items: center; 
+    justify-items: center;
+    -moz-column-gap: var(--grid-gutter);
+    column-gap: var(--grid-gutter);
+    grid-auto-flow: column;
+    margin-inline: auto;
+}
+
+/* Desktop: 12 Column Grid */
+@media (min-width: 1440px) {
+    .grid-container {
+      grid-template-columns: auto repeat(10, 72px) auto;
+    }
+    .container {
+        grid-column: 2 / span 10;
+    } 
+}
+
+/* Medium Desktop: 12 Column Grid */
+@media (min-width: 905px) and (max-width: 1439px) {
+    .grid-container {
+        grid-template-columns: auto repeat(12, minmax(0, 1fr)) auto; 
+    } 
+    .container {
+        grid-column: 3/ span 10; 
+    } 
+}
+
+/* Tablet: 8 Column Grid */
+@media (min-width: 600px) and (max-width: 904px) {
+    .grid-container {
+        grid-template-columns: 40px repeat(8, minmax(0, 1fr)) 40px; 
+        justify-content: stretch;
+    } 
+    .container {
+        grid-column: 3 / span 6; 
+    } 
+
+}
+
+/* Mobile: 4 Column Grid */
+@media (max-width: 599px) {
+    .grid-container {
+        grid-template-columns: 16px repeat(4, minmax(0, 1fr)) 16px; 
+        column-gap: 16px; 
+        justify-content: stretch;
+    }
+    .container {
+        grid-column: 2 / span 4; 
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+   

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="История на Зоопарк Благоевград - От създаването през 1959 г. от учителя Илко Василев до днес">
+  <meta name="author" content="Martin Iliev">
+  
+  <link rel="icon" type="image/svg+xml" href="../resources/images/icons/Icon.svg">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/components.css">
+  
+  <script src="../components/header.js" defer></script>
+  <script src="../components/footer.js" defer></script>
+  <script src="../components/working-hours.js" defer></script>
+  <script src="../components/donation-form.js" defer></script>
+  
+  <script src="../js/main.js" defer></script>
+  
+  <title>История - Зоопарк Благоевград</title>
+  
+  <style>
+    .section-history {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      background: var(--darker-white);
+      min-height: 100vh;
+    }
+
+    .history-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 40px 0;
+    }
+
+    .timeline-item {
+      margin-bottom: 32px;
+      padding: 24px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .timeline-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .timeline-year {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--main-bg-color);
+      margin-bottom: 12px;
+    }
+
+    .map-container {
+      margin-top: 48px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Към основно съдържание</a>
+  
+  <zoo-header current="history"></zoo-header>
+  
+  <main id="main-content">
+    <section class="section-history grid-container" aria-labelledby="history-heading">
+      <div class="container">
+        <div class="history-content">
+          <h1 id="history-heading">История</h1>
+          
+          <div class="timeline" role="list">
+            <article class="timeline-item" role="listitem">
+              <h2 class="timeline-year">1959 година</h2>
+              <p>
+                В Педагогическото училище, настанено в сградата на днешния Междуучилищен център, 
+                учителят от Червен бряг Илко Василев дава идеята за създаване на жив кът в услуга на
+                преподаването по биология. Той е създаден в сутерена на училището и става основа на 
+                втората Зоологическа градина в България.
+              </p>
+              <p>
+                Същата година Благоевградският зоопарк прави първите си стъпки в градската градина до 
+                днешния хотел „Ален мак". Там Илко Василев и ентусиазираните му ученици закачат първата 
+                клетка с първия обитател на зоопарка – орел, който кръщават Картал.
+              </p>
+            </article>
+
+            <article class="timeline-item" role="listitem">
+              <h2 class="timeline-year">1959-1961 година</h2>
+              <p>
+                От 1959 година до 1961 година Илко Василев обикаля из цяла България за да събере животни 
+                за зоопарка в Благоевград.
+              </p>
+            </article>
+
+            <article class="timeline-item" role="listitem">
+              <h2 class="timeline-year">5 януари 1961 година</h2>
+              <p>
+                Илко Василев е назначен официално за първия управител на Зоологическата градина, 
+                а Костадин Миладинов за първия щатен служител.
+              </p>
+            </article>
+
+            <article class="timeline-item" role="listitem">
+              <h2 class="timeline-year">1963 година</h2>
+              <p>
+                С помощта на доброволци е изградена двукилометрова алейна мрежа, покрита с базалтови 
+                плочки, както и са насадени множество дървета, храсти и рози.
+              </p>
+            </article>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.333363739627!2d23.099487774548162!3d42.0145804568604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aaf606baebc66d%3A0x917e30ee57fdd2a9!2z0JfQvtC-0LvQvtCz0LjRh9C10YHQutCwINCz0YDQsNC00LjQvdCwINCR0LvQsNCz0L7QtdCy0LPRgNCw0LQ!5e0!3m2!1sbg!2sbg!4v1715455754755!5m2!1sbg!2sbg"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Местоположение на Зоологическа градина Благоевград">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <zoo-footer></zoo-footer>
+</body>
+</html>

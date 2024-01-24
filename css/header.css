@@ -1,0 +1,157 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8.5%;
+    position: fixed;
+    border-radius: 0% 0% 25% 25% / 0% 0% 8% 8%;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 100;   
+}
+
+.logo img {
+    height: 3em;
+}
+
+.navbar ul {
+    display: flex;
+    gap: var(--spacer);
+    list-style-type: none;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar li a {
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    opacity: 0.8;
+}
+
+.current a::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 4px;
+    background: var(--orange-light);
+    border-radius: 0% 0% 80% 80% / 0% 0% 50% 50%;
+    top: -26px; 
+    left: -5%;
+    transition: transform 0.3s ease;
+}
+
+.working-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.working-time h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.working-time-grid {
+    display: flex;
+    align-items: center;
+}
+
+.clock-icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+    color: #666666;
+}
+
+.working-time-hours {
+    color: #666666;
+    font-weight: 550;
+    font-size: 1.05em;
+}
+
+
+.menu-button{
+    width:30px;
+    height: 30px;
+    display: none;
+    fill:white;
+}
+
+.menu-button{
+    #Top, #Bottom {
+        transition: transform 0.3s ease 0.5s; 
+        transform-origin: center center;
+    }
+    #Top{
+        transform: translateY(10px)  ;
+        transform-origin: center center;
+    }
+    
+    #Bottom {
+        transform:  translateY(-10px)  ;
+        transform-origin: center center;
+    }
+}
+.menu-button:hover {
+    #Top, #Bottom {
+        transition: transform 0.3s ease 0.5s; 
+        transform-origin: center center;
+    }
+    #Top{
+        transform: translateY(-18px)  ;
+        transform-origin: center center;
+    }
+    
+    #Bottom {
+        transform:  translateY(18px)  ;
+        transform-origin: center center;
+    }
+    .header{
+        height: 100%;
+    }
+}
+
+
+.header.active {
+    background: #ffffff;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+.header.active .navbar li a {
+    color: black;
+}
+
+.header.active .working-time h2 {
+    color: black;
+}
+
+.header.active .menu-button {
+    fill: black;
+}
+
+
+@media (max-width: 1150px) {
+    .working-time{
+        display: none;
+    }
+}
+@media (max-width: 960px) {
+    .navbar,
+    .working-time,
+    .navbar-button {
+        display: none;
+    }
+    .menu-button{
+        display: inline-block;
+    }
+}

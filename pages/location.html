@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Как да стигнете до Зоопарк Благоевград - намираме се в парк Ловен дом, Благоевград">
+  <meta name="author" content="Martin Iliev">
+  
+  <link rel="icon" type="image/svg+xml" href="../resources/images/icons/Icon.svg">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/components.css">
+  
+  <script src="../components/header.js" defer></script>
+  <script src="../components/footer.js" defer></script>
+  <script src="../components/working-hours.js" defer></script>
+  <script src="../components/donation-form.js" defer></script>
+  
+  <script src="../js/main.js" defer></script>
+  
+  <title>География - Зоопарк Благоевград</title>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Zoo",
+    "name": "Зоологическа градина Благоевград",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "парк Ловен дом",
+      "addressLocality": "Благоевград",
+      "postalCode": "2700",
+      "addressCountry": "BG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "42.0145804568604",
+      "longitude": "23.099487774548162"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "20:00"
+    }
+  }
+  </script>
+  
+  <style>
+    .section-map {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      background: var(--darker-white);
+      min-height: 100vh;
+    }
+
+    .location-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .location-info {
+      background: white;
+      padding: 32px;
+      border-radius: 8px;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-details {
+      margin-top: 24px;
+    }
+
+    .location-detail {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .location-detail-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      color: var(--main-bg-color);
+    }
+
+    .location-detail-text {
+      flex: 1;
+    }
+
+    .map-container {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      height: 500px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Към основно съдържание</a>
+  
+  <zoo-header current="location"></zoo-header>
+  
+  <main id="main-content">
+    <section class="section-map grid-container" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="location-content">
+          <h1 id="location-heading">Как да стигнем?</h1>
+          
+          <div class="location-info">
+            <h2>Подгответе се за удивително пътешествие</h2>
+            <p>
+              В един малък, но неповторим свят, в сърцето на Благоевград, се крие едно уникално място -
+              Зоологическата градина. Разположена в парк "Ловен дом", тази оазис от природа е дом на над 300
+              животни от различни части на света.
+            </p>
+
+            <div class="location-details">
+              <div class="location-detail">
+                <svg class="location-detail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <div class="location-detail-text">
+                  <strong>Адрес:</strong><br>
+                  парк "Ловен дом", Благоевград 2700
+                </div>
+              </div>
+
+              <div class="location-detail">
+                <svg class="location-detail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div class="location-detail-text">
+                  <strong>Работно време:</strong><br>
+                  Всеки ден: 09:00 - 20:00
+                </div>
+              </div>
+
+              <div class="location-detail">
+                <svg class="location-detail-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div class="location-detail-text">
+                  <strong>Как да стигнете:</strong><br>
+                  Можете да се придвижите с градски транспорт или лек автомобил. 
+                  Паркинг е наличен в близост до зоопарка.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.333363739627!2d23.099487774548162!3d42.0145804568604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aaf606baebc66d%3A0x917e30ee57fdd2a9!2z0JfQvtC-0LvQvtCz0LjRh9C10YHQutCwINCz0YDQsNC00LjQvdCwINCR0LvQsNCz0L7QtdCy0LPRgNCw0LQ!5e0!3m2!1sbg!2sbg!4v1715455754755!5m2!1sbg!2sbg"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Карта с местоположението на Зоологическа градина Благоевград">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <zoo-footer></zoo-footer>
+</body>
+</html>

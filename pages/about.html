@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="За автора на уебсайта на Зоопарк Благоевград - Мартин Илиев, студент по ИСТ">
+  <meta name="author" content="Martin Iliev">
+  
+  <link rel="icon" type="image/svg+xml" href="../resources/images/icons/Icon.svg">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/components.css">
+  
+  <script src="../components/header.js" defer></script>
+  <script src="../components/footer.js" defer></script>
+  <script src="../components/working-hours.js" defer></script>
+  <script src="../components/donation-form.js" defer></script>
+  
+  <script src="../js/main.js" defer></script>
+  
+  <title>За автора - Зоопарк Благоевград</title>
+  
+  <style>
+    .section-about-dev {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      background: var(--darker-white);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .author-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border: 2px solid var(--yellowish-light);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .author-table caption {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+      color: var(--main-bg-color);
+    }
+
+    .author-table th {
+      background-color: var(--yellowish-light);
+      border: 1px solid var(--yellowish-light);
+      padding: 16px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .author-table td {
+      border: 1px solid var(--yellowish-light);
+      padding: 16px;
+    }
+
+    .author-table tr:hover {
+      background-color: rgba(240, 237, 230, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Към основно съдържание</a>
+  
+  <zoo-header current="about"></zoo-header>
+  
+  <main id="main-content">
+    <section class="section-about-dev grid-container" aria-labelledby="author-heading">
+      <div class="container">
+        <article>
+          <h1 id="author-heading" class="visually-hidden">За автора</h1>
+          <table class="author-table">
+            <caption>Информация за разработчика</caption>
+            <thead>
+              <tr>
+                <th scope="col">Име</th>
+                <th scope="col">Факултетен номер</th>
+                <th scope="col">Специалност</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Мартин Илиев</td>
+                <td>23251421029</td>
+                <td>ИСТ</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <zoo-footer></zoo-footer>
+</body>
+</html>

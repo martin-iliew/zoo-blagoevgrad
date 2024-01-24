@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+:root {
+  --main-bg-color: #321111;
+  --spacer: 2vw;
+  --box-shadow: 0 0 0.5rem rgb(0 0 0 / 0.16);
+  line-height: 1.15;
+}
+
+::selection {
+  background: #f0ede6;
+  color: #282828;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--ff-main);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("../resources/images/animals/Lions.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--white);
+  margin-bottom: var(--spacer-half);
+}
+
+.hero-text {
+  color: var(--darker-white);
+}
+
+.hero-button {
+  margin-top: var(--spacer-1);
+}
+
+/* Hero Section End */
+
+section {
+  position: relative;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.section-gallery {
+  background: var(--yellowish-light);
+  padding-bottom: 40px;
+}
+
+.section-2 {
+  background: var(--darker-white);
+}
+
+.news-article {
+  background: #cca464;
+}
+
+.section-history {
+  position: relative;
+}
+
+/* About Section */
+.section-about {
+  background: var(--darker-white);
+  height: 150vh;
+}
+
+.section-about-container {
+  transform: translateY(-20vh);
+}
+@media (min-width: 1440px) {
+  .section-about-container article {
+    margin-top: 230px;
+  }
+}
+
+@media (min-width: 905px) and (max-width: 1439px) {
+  .section-about-container article {
+    margin-top: 180px;
+  }
+}
+
+@media (min-width: 870px) and (max-width: 904px) {
+  .section-about-container article {
+    margin-top: 250px;
+  }
+}
+
+@media (max-width: 869px) {
+  .section-about-container article {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 779px) {
+  .section-about-container article {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 660px) {
+  .section-about-container article {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-about-container article {
+    margin-top: 200px;
+  }
+}
+
+.section-about-button {
+  margin-top: var(--spacer);
+}
+
+.paw-steps:nth-child(1) img {
+  transform: translate(-450px, 0px) scale(0.5) rotate(90deg);
+}
+
+.paw-steps:nth-child(2) img {
+  transform: translate(-150px, 100px) scale(0.5) rotate(90deg);
+}
+
+.paw-steps:nth-child(3) img {
+  transform: translate(280px, 50px) scale(0.5) rotate(90deg);
+}
+
+.paw-steps:nth-child(4) img {
+  transform: translate(100px, 50px) scale(0.5) rotate(180deg);
+}
+
+.paw-steps:nth-child(5) img {
+  transform: translate(-100px, 160px) scale(0.5) rotate(180deg);
+}
+
+.paw-steps:nth-child(6) img {
+  transform: translate(-400px, 200px) scale(0.5) rotate(180deg);
+}
+
+.animation {
+  animation-timeline: view(block 70% 50%);
+  animation-name: grow;
+  animation-fill-mode: both;
+  animation-duration: 1ms;
+  animation-timing-function: linear;
+}
+
+@keyframes grow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* About Section End */
+
+.section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url("../resources/images/animals/Bison.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-3 blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.quote-text {
+  color: var(--white);
+  font-style: italic;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 800px;
+}
+
+.quote-author {
+  color: var(--darker-white);
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  text-align: center;
+}
+
+.bottom {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.bottom svg {
+  height: 203px;
+}
+
+/* Gallery Section*/
+.section-gallery h2 {
+  margin-top: var(--spacer);
+}
+
+.flex-container-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-box {
+  position: relative;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  width: calc(33.33% - 20px);
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 11% 11% 8% 15%/7% 8% 9% 9%;
+  transition: 0.5s;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-box h5 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.gallery-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #6f8d4f;
+  color: white;
+}
+
+.image-box:hover {
+  transform: rotate(-1deg) scale(1.01);
+}
+
+/* Gallery Section End */
+
+.section-history p {
+  padding-top: var(--spacer);
+  padding-bottom: var(--spacer);
+}
+
+@media screen and (max-width: 990px) {
+  .image-box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-box {
+    width: calc(200% - 10px);
+  }
+}

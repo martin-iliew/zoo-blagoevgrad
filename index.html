@@ -1,52 +1,201 @@
 <!DOCTYPE html>
 <html lang="bg">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Зоопарк Благоевград</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Зоологическа градина Благоевград - Открийте уникален свят на природата в сърцето на града. Над 300 животни от целия свят ви очакват.">
+  <meta name="keywords" content="зоопарк, Благоевград, зоологическа градина, животни, природа, България">
+  <meta name="author" content="Martin Iliev">
+  
+  <meta property="og:title" content="Зоопарк Благоевград">
+  <meta property="og:description" content="Открийте уникален свят на природата в сърцето на Благоевград">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zoo-blagoevgrad.bg">
+  <meta property="og:image" content="resources/images/animals/Lions.webp">
+  
+  <link rel="icon" type="image/svg+xml" href="resources/images/icons/Icon.svg">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+  
+  <script src="components/header.js" defer></script>
+  <script src="components/footer.js" defer></script>
+  <script src="components/working-hours.js" defer></script>
+  <script src="components/donation-form.js" defer></script>
+  <script src="components/gallery-card.js" defer></script>
+  
+  <script src="js/main.js" defer></script>
+  
+  <title>Зоопарк Благоевград - Начало</title>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Zoo",
+    "name": "Зоологическа градина Благоевград",
+    "image": "resources/images/animals/Lions.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "парк Ловен дом",
+      "addressLocality": "Благоевград",
+      "addressCountry": "BG"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "20:00"
+    },
+    "description": "Зоологическа градина с над 300 животни в парк Ловен дом, Благоевград"
+  }
+  </script>
+</head>
 
-    <link rel="stylesheet" type="text/css" href="resources/styles/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="resources/styles/typography.css"
-    />
-
-    <style>
-      body {
-        margin: 0;
-        font-family: sans-serif;
-      }
-
-      .hero {
-        padding: 3rem 1.5rem;
-        background: #2e7d32;
-        color: white;
-        text-align: center;
-      }
-
-      .section-about {
-        padding: 2rem 1.5rem;
-      }
-    </style>
-  </head>
-
-  <body>
-    <section class="hero">
-      <h1>Зоопарк Благоевград</h1>
-      <p>Добре дошли! Страницата е в процес на разработка.</p>
+<body>
+  <a href="#main-content" class="skip-link">Към основно съдържание</a>
+  
+  <zoo-header current="home"></zoo-header>
+  
+  <main id="main-content">
+    <section class="hero grid-container" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title" class="hero-title">
+          Добре дошли в Зоопарк Благоевград!
+        </h1>
+        <p class="hero-text">
+          Разположена в близост до сърцето на града, нашата зоологическа градина предлага завладяващо
+          пътешествие в животинския свят. Създайте спомени, които ще останат за цял живот.
+        </p>
+        <div class="hero-buttons">
+          <button class="hero-button CTA-button" onclick="window.location.href='pages/location.html'" aria-label="Отидете към страницата География">
+            Как да стигнем?
+          </button>
+          <button class="hero-button ghost-button" onclick="window.location.href='pages/history.html'" aria-label="Научете повече за историята на зоопарка">
+            Научете повече
+          </button>
+        </div>
+      </div>
     </section>
 
-    <section class="section-about">
-      <h2>За зоопарка</h2>
-      <p>
-        Тук ще бъде информация за историята и животните. Съдържанието все още се
-        подготвя.
-      </p>
+    <section class="section-about grid-container" aria-labelledby="about-heading">
+      <div class="right-direction container">
+        <div class="paw-steps animation" aria-hidden="true">
+          <img src="resources/images/Paw.svg" alt="">
+        </div>
+        <div class="paw-steps animation" aria-hidden="true">
+          <img src="resources/images/Paw.svg" alt="">
+        </div>
+        <div class="paw-steps animation" aria-hidden="true">
+          <img src="resources/images/Paw.svg" alt="">
+        </div>
+        <div class="paw-steps animation" aria-hidden="true">
+          <img src="resources/images/Paw.svg" alt="">
+        </div>
+        <div class="paw-steps animation" aria-hidden="true">
+          <img src="resources/images/Paw.svg" alt="">
+        </div>
+        <div class="paw-steps animation" aria-hidden="true">
+          <img src="resources/images/Paw.svg" alt="">
+        </div>
+      </div>
+      <div class="section-about-container container">
+        <article>
+          <h2 id="about-heading">Подгответе се за удивително пътешествие</h2>
+          <p>
+            В един малък, но неповторим свят, в сърцето на Благоевград, се крие едно уникално място -
+            Зоологическата градина. Разположена в парк "Ловен дом", тази оазис от природа е дом на над 300
+            животни от различни части на света.
+          </p>
+          <button class="section-about-button CTA-button"
+            onclick="window.location.href='pages/location.html'">Планирай пътуването</button>
+        </article>
+        <article>
+          <h2>Как започва всичко...</h2>
+          <p>
+            През 1959 г. учителят Илко Василев предлага идея за жив кът в училище. Същата година започва
+            развитието на Благоевградския зоопарк. През 1961 г. Василев е назначен за управител на
+            Зоологическата градина. През 1963 г. е изградена алейна мрежа и засадени растения...
+          </p>
+          <button class="section-about-button CTA-button"
+            onclick="window.location.href='pages/history.html'">Научи повече</button>
+        </article>
+      </div>
     </section>
 
-    <footer style="background: #f2f2f2; padding: 1rem; text-align: center">
-      <p>&copy; 2024 Зоопарк Благоевград</p>
-    </footer>
-  </body>
+    <section class="section-3 grid-container" aria-label="Цитат">
+      <div class="container">
+        <blockquote>
+          <p class="quote-text">
+            "Животните не могат да говорят, но можем да ги слушаме."
+          </p>
+          <footer class="quote-author">
+            — Джейн Гудол
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section-gallery grid-container" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading">Галерия</h2>
+        <div class="flex-container-gallery" role="list">
+          <zoo-gallery-card 
+            image="resources/images/animals/Monkey.webp" 
+            alt="Маймуни в зоопарка" 
+            title="Маймуни"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Emu.webp" 
+            alt="Ему в зоопарка" 
+            title="Ему"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Llama.webp" 
+            alt="Лама в зоопарка" 
+            title="Лама"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Lion.webp" 
+            alt="Лъв в зоопарка" 
+            title="Лъв"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Bear.webp" 
+            alt="Мечка в зоопарка" 
+            title="Мечка"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Alpaca.webp" 
+            alt="Алпака в зоопарка" 
+            title="Алпака"
+            role="listitem">
+          </zoo-gallery-card>
+        </div>
+        <button class="section-about-button CTA-button"
+          onclick="window.location.href='pages/gallery.html'">Виж още</button>
+      </div>
+    </section>
+  </main>
+
+  <zoo-footer></zoo-footer>
+</body>
 </html>

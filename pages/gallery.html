@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Галерия със снимки на животните в Зоопарк Благоевград - маймуни, лъвове, мечки, елени и много други">
+  <meta name="author" content="Martin Iliev">
+  
+  <link rel="icon" type="image/svg+xml" href="../resources/images/icons/Icon.svg">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/components.css">
+  
+  <script src="../components/header.js" defer></script>
+  <script src="../components/footer.js" defer></script>
+  <script src="../components/working-hours.js" defer></script>
+  <script src="../components/donation-form.js" defer></script>
+  <script src="../components/gallery-card.js" defer></script>
+  
+  <script src="../js/main.js" defer></script>
+  
+  <title>Галерия - Зоопарк Благоевград</title>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Към основно съдържание</a>
+  
+  <zoo-header current="gallery"></zoo-header>
+  
+  <main id="main-content">
+    <section class="section-gallery grid-container" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h1 id="gallery-heading" style="margin-top:100px;">Галерия</h1>
+        <p class="gallery-description">Разгледайте нашите обитатели - от експресивни маймуни до величествени лъвове</p>
+        
+        <div class="flex-container-gallery" role="list" style="margin-bottom:100px;">
+          <zoo-gallery-card 
+            image="resources/images/animals/Monkey.webp" 
+            alt="Маймуни играят в зоопарка" 
+            title="Маймуни"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Emu.webp" 
+            alt="Ему в естественото си местообитание" 
+            title="Ему"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Llama.webp" 
+            alt="Спокойна лама в зоопарка" 
+            title="Лама"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Lion.webp" 
+            alt="Величествен лъв почива" 
+            title="Лъв"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Bear.webp" 
+            alt="Кафява мечка в зоопарка" 
+            title="Мечка"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Alpaca.webp" 
+            alt="Приятелска алпака" 
+            title="Алпака"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Bison.webp" 
+            alt="Мощен бизон" 
+            title="Бизон"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Deer.webp" 
+            alt="Грациозни елени" 
+            title="Елени"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Calf.webp" 
+            alt="Сладки телета" 
+            title="Телета"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Cattle.webp" 
+            alt="Говеда в зоопарка" 
+            title="Говеда"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Squirrel.webp" 
+            alt="Игрива катерица" 
+            title="Катерица"
+            role="listitem">
+          </zoo-gallery-card>
+          <zoo-gallery-card 
+            image="resources/images/animals/Sheep.webp" 
+            alt="Вълнести овци" 
+            title="Овци"
+            role="listitem">
+          </zoo-gallery-card>
+        </div>
+        
+        <button class="section-about-button CTA-button"
+          onclick="window.location.href='location.html'">Планирай пътуването</button>
+      </div>
+    </section>
+  </main>
+
+  <zoo-footer></zoo-footer>
+</body>
+</html>

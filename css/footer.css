@@ -1,0 +1,73 @@
+.fixed-footer{
+    background-image: url('../images/Footer.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: sticky;
+    bottom: 0;
+    left: 0; 
+    z-index: -1;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container-donation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    z-index: 1;
+}
+
+.card-donation {
+    background-color: #f9f9f9;
+    border-radius: 18% 11% 3% 17%/2% 2% 34% 4%;
+    box-shadow: var(--box-shadow);
+    width:100%;
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.donation-textbox {
+    padding: var(--spacer-half);
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%; 
+    margin-top: var(--spacer-half);
+    margin-bottom: var(--spacer-half);
+}
+
+.donation-textbox::placeholder {
+    color: var(--light-gray-light); 
+}
+
+.donation-textbox:focus {
+    outline: none; 
+    border-color: var(--orange-light); 
+    box-shadow: 0 0 5px var(--orange-light); 
+}
+
+.footer-bottom {
+    position: fixed;
+    text-align: center;
+    bottom: 10px;
+}
+.footer-bottom p {
+    color: #ffffff;
+    font-size:1rem;
+    opacity: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .fixed-footer {
+        background-size: auto 100%; 
+    }
+}
+
+
